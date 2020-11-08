@@ -1,7 +1,103 @@
+/* 
+    ## Imports ## 
+*/
+/* Kumbh Sans */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* # # # # # # # # # # #
+// ## General Styles # #
+// # # # # # # # # # # # 
+*/
+
+html,
+body {
+  display: block;
+  position: relative;
+  height: 100%;
+  margin: 0;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+
+  background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+}
+
+.page-wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
 .attribution {
+  position: absolute;
   font-size: 11px;
   text-align: center;
+  bottom: 0;
+  margin-bottom: 5px;
+  align-items: center;
+  width: 100%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* # # # # # # # # # 
+//  # Card Styles # #
+//   # # # # # # # # # 
+
+    - Card Container
+      - Card
+        - Card Media Container
+          - Card Media / Img 
+
+        - Card Content Container
+          - Card Content / Title
+          - Card Content / Accordian 
+*/
+
+.card__container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  position: relative;
+  width: 70%;
+  max-width: 922px;
+
+  background-color: #fffffd;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 32px 36px -12px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 32px 36px -12px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 32px 36px -12px rgba(0, 0, 0, 0.31);
+}
+
+.card-media.container {
+  width: 48%;
+}
+.card-content.container {
+  width: 52%;
+  overflow: hidden;
+  padding: 0 24px;
+}
+/* 
+Card Title 
+*/
+.card-content.title {
+  margin-top: 72px;
+  margin-bottom: 24px;
+  color: #1d1e35;
+  /* font-size: 32px; */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-content.content {
+  margin-top: 24px;
+  margin-right: 72px;
+  margin-bottom: 65px;
+}
+
+.divider {
+  margin: 20px 0;
 }
